@@ -23,7 +23,7 @@ public class LoginPage {
     @FindBy(name = "submit")
     public WebElement submitBtn;
 
-    @FindBy(className = "alert alert-error")
+    @FindBy(xpath = "//div[@class='alert alert-error']")
     public WebElement errorMessage;
 
 

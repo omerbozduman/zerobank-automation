@@ -42,8 +42,8 @@ public class LoginStepDefs {
 
     @Then("Account Summary page should be displayed")
     public void account_Summary_page_should_be_displayed() {
-
-       Assert.assertEquals("verify Account summary page","Account Summary",accountSummaryPage.accountSummaryTab.getText());
+        Assert.assertTrue(Driver.get().getTitle().contains("Account Summary"));
+        Assert.assertEquals("verify Account summary page","Account Summary",accountSummaryPage.accountSummaryTab.getText());
     }
 
     @Then("the user enter the wrong username, valid password")
@@ -64,7 +64,8 @@ public class LoginStepDefs {
     @Then("message should be displayed {string}")
     public void message_should_be_displayed(String expected) {
         Assert.assertEquals(expected,loginPage.errorMessage.getText());
-        Assert.assertTrue(loginPage.errorMessage.isDisplayed());
+        BrowserUtils.waitFor(2);
+        Assert.assertTrue(loginPage.errorMessage.getText().contains(expected));
     }
 
     @Then("the user enter the valid username, wrong password")
