@@ -19,9 +19,6 @@ public class AccountSummaryPage extends BasePage {
     @FindBy(xpath = "(//thead)[3]/tr/th")
     public List<WebElement> creditCardsOptions;
 
-    public String getAccountType(){
-        return accountType.getAttribute("value");
-    }
 
 
 }

@@ -1,41 +1,17 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-06-05T18:54:54.321Z",
-        "before": [
-          {
-            "result": {
-              "duration": 828000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.zerobank.stepdefinitions.Hooks.setUp()"
-            }
-          }
-        ],
         "line": 4,
-        "name": "Verify Account Summary Page",
+        "name": "",
         "description": "",
-        "id": "account-summary;verify-account-summary-page",
-        "after": [
-          {
-            "result": {
-              "duration": 95221000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.zerobank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 3166993000,
+              "duration": 3070932000,
               "status": "passed"
             },
             "line": 5,
@@ -47,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 210647000,
+              "duration": 201602000,
               "status": "passed"
             },
             "line": 6,
@@ -59,7 +35,7 @@
           },
           {
             "result": {
-              "duration": 1150715000,
+              "duration": 1093337000,
               "status": "passed"
             },
             "line": 7,
@@ -81,84 +57,329 @@
           },
           {
             "result": {
-              "duration": 8755000,
+              "duration": 736174000,
               "status": "passed"
             },
             "line": 8,
-            "name": "the title should be \"Zero - Account Summary\"",
+            "name": "the user naavigate to \"Pay Bills\" tab",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Zero - Account Summary\"",
-                  "offset": 20
+                  "val": "\"Pay Bills\"",
+                  "offset": 22
                 }
               ],
-              "location": "com.zerobank.stepdefinitions.AccountSummaryDefs.the_title_should_be(java.lang.String)"
+              "location": "com.zerobank.stepdefinitions.AccountActivityDefs.the_user_naavigate_to_tab(java.lang.String)"
             },
-            "keyword": "And "
-          },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-05T23:22:30.041Z",
+        "before": [
           {
             "result": {
-              "duration": 74624000,
+              "duration": 922000,
               "status": "passed"
             },
-            "line": 9,
-            "name": "the user should see following account types",
             "match": {
-              "location": "com.zerobank.stepdefinitions.AccountSummaryDefs.the_user_should_see_following_account_types(java.util.List\u003cjava.lang.String\u003e)"
+              "location": "com.zerobank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "Verify Payment Operation with amount field empty",
+        "description": "",
+        "id": ";verify-payment-operation-with-amount-field-empty",
+        "after": [
+          {
+            "result": {
+              "duration": 96617000,
+              "status": "passed"
             },
-            "rows": [
-              {
-                "cells": [
-                  "Cash Accounts"
-                ]
-              },
-              {
-                "cells": [
-                  "Investment Accounts"
-                ]
-              },
-              {
-                "cells": [
-                  "Credit Accounts"
-                ]
-              },
-              {
-                "cells": [
-                  "Loan Accounts"
-                ]
-              }
-            ],
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 107526000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "the user select the Payee",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.PayBillsDefs.the_user_select_the_Payee()"
+            },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 55976000,
+              "duration": 89666000,
               "status": "passed"
             },
-            "line": 14,
-            "name": "user should see following options under Credit Accounts",
+            "line": 26,
+            "name": "the user select the account",
             "match": {
-              "location": "com.zerobank.stepdefinitions.AccountSummaryDefs.user_should_see_following_options_under_Credit_Accounts(java.util.List\u003cjava.lang.String\u003e)"
+              "location": "com.zerobank.stepdefinitions.PayBillsDefs.the_user_select_the_account()"
             },
-            "rows": [
-              {
-                "cells": [
-                  "Account"
-                ]
-              },
-              {
-                "cells": [
-                  "Credit Card"
-                ]
-              },
-              {
-                "cells": [
-                  "Balance"
-                ]
-              }
-            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 170746000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "the user enter the Date",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.PayBillsDefs.the_user_enter_the_Date()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 181151000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "enter the Description",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.PayBillsDefs.enter_the_Description()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 93913000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "enter pay button for payment",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.PayBillsDefs.enter_pay_button_for_payment()"
+            },
             "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2036545000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "verify for \"amount\" \"Please fill in this field.\" alert message display",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"amount\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Please fill in this field.\"",
+                  "offset": 20
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.PayBillsDefs.verify_for_alert_message_display(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2205665000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user is on the Home Page",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_is_on_the_Home_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 195092000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user navigate to Login Page",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_navigate_to_Login_Page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1122845000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user logs in using \"username\" and \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"username\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"password\"",
+                  "offset": 38
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_logs_in_using_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 705119000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user naavigate to \"Pay Bills\" tab",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Pay Bills\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.AccountActivityDefs.the_user_naavigate_to_tab(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-05T23:22:37.990Z",
+        "before": [
+          {
+            "result": {
+              "duration": 75000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 51,
+        "name": "Verify Payment Operation without date",
+        "description": "",
+        "id": ";verify-payment-operation-without-date",
+        "after": [
+          {
+            "result": {
+              "duration": 120379000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 99459000,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "the user select the Payee",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.PayBillsDefs.the_user_select_the_Payee()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 84042000,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "the user select the account",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.PayBillsDefs.the_user_select_the_account()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 95905000,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "the user enter the Amount",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.PayBillsDefs.the_user_enter_the_Amount()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 136733000,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "enter the Description",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.PayBillsDefs.enter_the_Description()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 90029000,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "enter pay button for payment",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.PayBillsDefs.enter_pay_button_for_payment()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2027887000,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "verify for \"date\" \"Please fill in this field.\" alert message display",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"date\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Please fill in this field.\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.PayBillsDefs.verify_for_alert_message_display(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
           }
         ],
         "tags": [
@@ -168,11 +389,11 @@
         ]
       }
     ],
-    "name": "Account Summary",
+    "name": "",
     "description": "",
-    "id": "account-summary",
+    "id": "",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/AccountSummary.feature",
+    "uri": "file:src/test/resources/features/PayBills.feature",
     "tags": []
   }
 ]
