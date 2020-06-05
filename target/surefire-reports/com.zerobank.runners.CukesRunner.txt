@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: com.zerobank.runners.CukesRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 26.471 s <<< FAILURE! - in com.zerobank.runners.CukesRunner
+Login with valid credentials(Users should be able to login)  Time elapsed: 26.105 s  <<< ERROR!
+java.lang.NullPointerException
+
