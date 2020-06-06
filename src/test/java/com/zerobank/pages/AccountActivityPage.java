@@ -64,7 +64,7 @@ public class AccountActivityPage extends BasePage{
     }
 
     public void verifyDepositTransactions(){
-        
+
     }
 
     public List<Integer> getIntDateTable(){
