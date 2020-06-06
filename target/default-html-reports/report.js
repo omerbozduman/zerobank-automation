@@ -63,7 +63,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Search date range",
+  "name": "Search description case insensitive",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -73,11 +73,11 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "name": "the user enters date range from \"2012-09-01\" to \"2012-09-06\"",
+  "name": "the user enters description \"ONLINE\"",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.zerobank.stepdefinitions.FindTransactionsDefs.the_user_enters_date_range_from_to(java.lang.String,java.lang.String)"
+  "location": "com.zerobank.stepdefinitions.FindTransactionsDefs.the_user_enters_description(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -93,35 +93,24 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "results table should only show transactions dates between \"2012-09-01\" to \"2012-09-06\"",
+  "name": "results table should only show descriptions containing \"ONLINE\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.zerobank.stepdefinitions.FindTransactionsDefs.results_table_should_only_show_transactions_dates_between_to(java.lang.String,java.lang.String)"
+  "location": "com.zerobank.stepdefinitions.FindTransactionsDefs.results_table_should_only_show_descriptions_containing(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the results should be sorted by most recent date",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.zerobank.stepdefinitions.FindTransactionsDefs.the_results_should_be_sorted_by_most_recent_date()"
-});
-formatter.result({
-  "error_message": "io.cucumber.java.PendingException: TODO: implement me\n\tat com.zerobank.stepdefinitions.FindTransactionsDefs.the_results_should_be_sorted_by_most_recent_date(FindTransactionsDefs.java:43)\n\tat ✽.the results should be sorted by most recent date(file:///Users/omerbozduman/IdeaProjects/zerobank-automation/src/test/resources/features/FindTransactions.feature:16)\n",
-  "status": "pending"
-});
-formatter.step({
-  "name": "the user enters date range from \"2012-09-02\" to \"2012-09-06\"",
+  "name": "the user enters description \"online\"",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.zerobank.stepdefinitions.FindTransactionsDefs.the_user_enters_date_range_from_to(java.lang.String,java.lang.String)"
+  "location": "com.zerobank.stepdefinitions.FindTransactionsDefs.the_user_enters_description(java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "clicks search",
@@ -131,28 +120,20 @@ formatter.match({
   "location": "com.zerobank.stepdefinitions.FindTransactionsDefs.clicks_search()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
-  "name": "results table should only show transactions dates between \"2012-09-02\" to \"2012-09-06\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.zerobank.stepdefinitions.FindTransactionsDefs.results_table_should_only_show_transactions_dates_between_to(java.lang.String,java.lang.String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "the results table should only not contain transactions dated \"2012-09-01\"",
+  "name": "results table should only show descriptions containing \"ONLINE\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "com.zerobank.stepdefinitions.FindTransactionsDefs.the_results_table_should_only_not_contain_transactions_dated(java.lang.String)"
+  "location": "com.zerobank.stepdefinitions.FindTransactionsDefs.results_table_should_only_show_descriptions_containing(java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "error_message": "java.lang.AssertionError: verify table show only description\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.assertTrue(Assert.java:42)\n\tat com.zerobank.stepdefinitions.FindTransactionsDefs.results_table_should_only_show_descriptions_containing(FindTransactionsDefs.java:64)\n\tat ✽.results table should only show descriptions containing \"ONLINE\"(file:///Users/omerbozduman/IdeaProjects/zerobank-automation/src/test/resources/features/FindTransactions.feature:37)\n",
+  "status": "failed"
 });
+formatter.embedding("image/png", "embedded0.png", "screenshot");
 formatter.after({
   "status": "passed"
 });

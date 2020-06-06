@@ -1,10 +1,13 @@
 package com.zerobank.pages;
 
 import com.zerobank.utilities.BrowserUtils;
-import io.cucumber.java.en_lol.WEN;
+import com.zerobank.utilities.Driver;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.Select;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class AccountActivityPage extends BasePage{
@@ -36,12 +39,106 @@ public class AccountActivityPage extends BasePage{
     @FindBy(xpath = "//button[@type='submit']")
     public WebElement searchBtn;
 
-    public void verifyDate(String fromDate , String toDate){
+    @FindBy(xpath = "//div[@id='filtered_transactions_for_account']//tbody//td[2]")
+    public List<WebElement> descriptionResultTable;
+
+    @FindBy(xpath = "//div[@class='well']")
+    public WebElement descriptionNoResult;
+
+    @FindBy(id = "filtered_transactions_for_account")
+    public WebElement descriptionTable;
+
+    @FindBy(xpath = "//div[@id='filtered_transactions_for_account']//tbody//td[4]")
+    public List<WebElement> withdrawalResultTabel;
+
+    @FindBy(xpath = "//div[@id='filtered_transactions_for_account']//tbody//td[3]")
+    public List<WebElement> depositResultTabel;
+
+    @FindBy(id = "aa_type")
+    public WebElement selectTypeBtn;
+
+
+    public void selectTransactionsType(String transactionsType){
+        Select selectType = new Select(selectTypeBtn);
+        selectType.selectByVisibleText(transactionsType);
+    }
+
+    public void verifyDepositTransactions(){
+        
+    }
+
+    public List<Integer> getIntDateTable(){
 
         List<String> dates = BrowserUtils.getElementsText(dateResultTable);
-
+        ArrayList<Integer> intDate = new ArrayList<>();
         System.out.println("dates = " + dates);
-        System.out.println("fromDate = " + fromDate);
+        for (String sdate : dates) {
+            int date = Integer.valueOf(sdate.replace("-",""));
+            System.out.println("date = " + date);
+            intDate.add(date);
+        }
+        return intDate;
+    }
+
+    public boolean verifyDate(String fromDate , String toDate){
+
+        int fDate = Integer.valueOf(fromDate.replace("-",""));
+        int tDate = Integer.valueOf(toDate.replace("-",""));
+
+        boolean flag = false;
+        for (Integer date : getIntDateTable()) {
+            if(date>=fDate && date<=tDate){
+              flag = true;
+            }
+        }
+        return flag;
+    }
+
+    public boolean verifySortedRecentDate(){
+        List<Integer> sortedDate = getIntDateTable();
+
+        int recentDate = sortedDate.get(0);
+        boolean flag = false;
+        for(int i=1; i<sortedDate.size(); i++){
+            if(recentDate>sortedDate.get(i)){
+                recentDate=sortedDate.get(i);
+                flag=true;
+            }
+        }
+        return flag;
+    }
+
+    public boolean verifyExcludingDate(String exDate){
+        int excludingDate = Integer.valueOf(exDate.replace("-",""));
+
+        boolean flag=true;
+        for (Integer date : getIntDateTable()) {
+            if(excludingDate==date){
+                flag=false;
+            }
+        }
+        return flag;
+    }
+
+    public boolean verifySearchWithDescription(String descript){
+
+        List<String> descriptions = BrowserUtils.getElementsText(descriptionResultTable);
+        int countDescription=0;
+        boolean flag = false;
+        for (String description : descriptions) {
+            if(description.contains(descript)){
+                countDescription++;
+            }
+        }
+        if(!descriptionTable.getText().equals("No results.")) {
+            if (countDescription == descriptions.size()) {
+                flag = true;
+            }
+        }else if(!descriptionNoResult.getText().isEmpty()){
+            flag=false;
+        }
+
+        return flag;
     }
 
 }
