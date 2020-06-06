@@ -1,4 +1,4 @@
-@wip
+
 Feature:
 
   Background:
@@ -20,7 +20,7 @@ Feature:
     And enter pay button for payment
     Then verify "The payment was successfully submitted." message display
 
-  @wip
+
   Scenario:Verify Payment Operation with amount field empty
     Then the user select the Payee
     Then the user select the account

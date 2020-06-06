@@ -1,10 +1,11 @@
 
-Feature:
+Feature:Account Activity
+
 Background:
   Given the user is on the Home Page
   When the user navigate to Login Page
   Then the user logs in using "username" and "password"
-  Then the user naavigate to "Account Activity" tab
+  Then the user navigate to "Account Activity" tab
 
 
   Scenario:  Verify Account Activity Page
@@ -12,7 +13,7 @@ Background:
 
 
   Scenario:  Verify Account Activity tab Account dropdown default option
-    Then the user should see default option "Savings" on dropdown
+    Then Account drop down should have "Savings" selected
 
 
   Scenario:  Verify Account Activity tab Account dropdown options
