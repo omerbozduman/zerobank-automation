@@ -2,6 +2,7 @@ package com.zerobank.pages;
 
 import com.zerobank.utilities.BrowserUtils;
 import com.zerobank.utilities.Driver;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -9,6 +10,7 @@ import org.openqa.selenium.support.ui.Select;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class AccountActivityPage extends BasePage{
 
@@ -49,22 +51,92 @@ public class AccountActivityPage extends BasePage{
     public WebElement descriptionTable;
 
     @FindBy(xpath = "//div[@id='filtered_transactions_for_account']//tbody//td[4]")
-    public List<WebElement> withdrawalResultTabel;
+    public List<WebElement> withdrawalResultTable;
 
     @FindBy(xpath = "//div[@id='filtered_transactions_for_account']//tbody//td[3]")
-    public List<WebElement> depositResultTabel;
+    public List<WebElement> depositResultTable;
 
     @FindBy(id = "aa_type")
     public WebElement selectTypeBtn;
 
+    @FindBy(xpath = "//a[contains(text(),'Add New Payee')]")
+    public WebElement addNewPayeeBtn;
+
+    @FindBy(id = "np_new_payee_name")
+    public WebElement payeeNameBox;
+
+    @FindBy(id = "np_new_payee_address")
+    public WebElement payeeAddressBox;
+
+    @FindBy(id = "np_new_payee_account")
+    public WebElement newPayeeAccountBox;
+
+    @FindBy(id = "np_new_payee_details")
+    public WebElement newPayeeDetailsBox;
+
+    @FindBy(id = "add_new_payee")
+    public WebElement submitNewPayeeBtn;
+
+    @FindBy(id = "alert_content")
+    public WebElement submitMessage;
+
+    @FindBy(xpath = "//a[contains(text(),'Purchase Foreign Currency')]")
+    public WebElement purchaseForeignCurrencyBtn;
+
+    @FindBy(xpath = "//select[@name='currency']")
+    public WebElement currencyDropdownList;
+
+
+    public void verifyCurrenciesList(List<String> currencyList){
+        Select selectCurrency = new Select(currencyDropdownList);
+        String expectedOption;
+        String actualOption;
+        for (String currency : currencyList) {
+            expectedOption=currency;
+            selectCurrency.selectByVisibleText(currency);
+            actualOption=selectCurrency.getFirstSelectedOption().getText();
+            Assert.assertEquals("verify selection",expectedOption,actualOption);
+        }
+    }
 
     public void selectTransactionsType(String transactionsType){
         Select selectType = new Select(selectTypeBtn);
         selectType.selectByVisibleText(transactionsType);
     }
 
-    public void verifyDepositTransactions(){
-
+    public boolean verifyDepositTransactions(){
+        boolean flag = false;
+        if(depositResultTable.size()>0){
+            flag=true;
+        }
+        return flag;
+    }
+    public boolean verifyDepositTransactionsIsEmpty() {
+        boolean flag = false;
+        for (WebElement deposit : depositResultTable) {
+            System.out.println("withdrawal = " + deposit.getText());
+            if (deposit.getText().isEmpty()) {
+                flag = true;
+            }
+        }
+        return flag;
+    }
+    public boolean verifyWithdrawalTransactions(){
+        boolean flag = false;
+        if(withdrawalResultTable.size()>0){
+            flag=true;
+        }
+        return flag;
+    }
+    public boolean verifyWithdrawalTransactionsIsEmpty(){
+        boolean flag = false;
+        for (WebElement withdrawal : withdrawalResultTable) {
+            System.out.println("withdrawal = " + withdrawal.getText());
+            if(withdrawal.getText().isEmpty()){
+                flag=true;
+            }
+        }
+        return flag;
     }
 
     public List<Integer> getIntDateTable(){
@@ -140,5 +212,19 @@ public class AccountActivityPage extends BasePage{
 
         return flag;
     }
+
+
+
+    public void createNewPayee(Map<String,String> payeeInfo){
+
+        BrowserUtils.waitFor(2);
+        payeeNameBox.sendKeys(payeeInfo.get("Payee Name"));
+        payeeAddressBox.sendKeys(payeeInfo.get("Payee Address"));
+        newPayeeAccountBox.sendKeys(payeeInfo.get("Account"));
+        newPayeeDetailsBox.sendKeys(payeeInfo.get("Payee details"));
+        submitNewPayeeBtn.click();
+
+    }
+
 
 }

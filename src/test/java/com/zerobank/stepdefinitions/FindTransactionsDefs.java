@@ -73,31 +73,28 @@ public class FindTransactionsDefs {
 
     @Then("results table should show at least one result under Deposit")
     public void results_table_should_show_at_least_one_result_under_Deposit() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        Assert.assertTrue("verify deposit transactions on results table",accountActivityPage.verifyDepositTransactions());
     }
 
     @Then("results table should show at least one result under Withdrawal")
     public void results_table_should_show_at_least_one_result_under_Withdrawal() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        Assert.assertTrue("verify withdrawal transactions on results table",accountActivityPage.verifyWithdrawalTransactions());
     }
 
     @When("user selects type {string}")
     public void user_selects_type(String transactionsType) {
         accountActivityPage.selectTransactionsType(transactionsType);
+        BrowserUtils.waitFor(2);
     }
 
     @Then("results table should show no result under Withdrawal")
     public void results_table_should_show_no_result_under_Withdrawal() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        Assert.assertTrue("verify withdrawal table is empty",accountActivityPage.verifyWithdrawalTransactionsIsEmpty());
     }
 
     @Then("results table should show no result under Deposit")
     public void results_table_should_show_no_result_under_Deposit() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        Assert.assertTrue("verify deposit table is empty",accountActivityPage.verifyDepositTransactionsIsEmpty());
     }
 
 

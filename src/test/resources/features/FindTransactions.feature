@@ -27,7 +27,7 @@ Feature: Find Transactions in Account Activity
     Then clicks search
     Then results table should only show descriptions containing "OFFICE"
     But results table should not show descriptions containing "OFFICE"
-  @wip
+
   Scenario: Search description case insensitive
     When the user enters description "ONLINE"
     Then clicks search
@@ -41,8 +41,10 @@ Feature: Find Transactions in Account Activity
     Then results table should show at least one result under Deposit
     Then results table should show at least one result under Withdrawal
     When user selects type "Deposit"
+    Then clicks search
     Then results table should show at least one result under Deposit
     But results table should show no result under Withdrawal
     When user selects type "Withdrawal"
+    Then clicks search
     Then results table should show at least one result under Withdrawal
     But results table should show no result under Deposit

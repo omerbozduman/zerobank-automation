@@ -5,7 +5,7 @@ Feature:
     Given the user is on the Home Page
     When the user navigate to Login Page
     Then the user logs in using "username" and "password"
-    Then the user naavigate to "Pay Bills" tab
+    Then the user navigate to "Pay Bills" tab
 
 
   Scenario:  Verify Account Activity Page
