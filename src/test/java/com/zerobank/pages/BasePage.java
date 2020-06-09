@@ -12,7 +12,6 @@ public abstract class BasePage {
     }
 
 
-    //a[contains(text(),'Account Summary')]
 
     public void navigateToModule(String tab){
         String tabLocator = "//a[contains(text(),'"+tab+"')]";

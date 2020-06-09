@@ -1,16 +1,13 @@
 package com.zerobank.pages;
 
 import com.zerobank.utilities.BrowserUtils;
-import com.zerobank.utilities.Driver;
-import org.junit.Assert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
+
 
 public class AccountActivityPage extends BasePage{
 
@@ -59,45 +56,7 @@ public class AccountActivityPage extends BasePage{
     @FindBy(id = "aa_type")
     public WebElement selectTypeBtn;
 
-    @FindBy(xpath = "//a[contains(text(),'Add New Payee')]")
-    public WebElement addNewPayeeBtn;
 
-    @FindBy(id = "np_new_payee_name")
-    public WebElement payeeNameBox;
-
-    @FindBy(id = "np_new_payee_address")
-    public WebElement payeeAddressBox;
-
-    @FindBy(id = "np_new_payee_account")
-    public WebElement newPayeeAccountBox;
-
-    @FindBy(id = "np_new_payee_details")
-    public WebElement newPayeeDetailsBox;
-
-    @FindBy(id = "add_new_payee")
-    public WebElement submitNewPayeeBtn;
-
-    @FindBy(id = "alert_content")
-    public WebElement submitMessage;
-
-    @FindBy(xpath = "//a[contains(text(),'Purchase Foreign Currency')]")
-    public WebElement purchaseForeignCurrencyBtn;
-
-    @FindBy(xpath = "//select[@name='currency']")
-    public WebElement currencyDropdownList;
-
-
-    public void verifyCurrenciesList(List<String> currencyList){
-        Select selectCurrency = new Select(currencyDropdownList);
-        String expectedOption;
-        String actualOption;
-        for (String currency : currencyList) {
-            expectedOption=currency;
-            selectCurrency.selectByVisibleText(currency);
-            actualOption=selectCurrency.getFirstSelectedOption().getText();
-            Assert.assertEquals("verify selection",expectedOption,actualOption);
-        }
-    }
 
     public void selectTransactionsType(String transactionsType){
         Select selectType = new Select(selectTypeBtn);
@@ -215,16 +174,7 @@ public class AccountActivityPage extends BasePage{
 
 
 
-    public void createNewPayee(Map<String,String> payeeInfo){
 
-        BrowserUtils.waitFor(2);
-        payeeNameBox.sendKeys(payeeInfo.get("Payee Name"));
-        payeeAddressBox.sendKeys(payeeInfo.get("Payee Address"));
-        newPayeeAccountBox.sendKeys(payeeInfo.get("Account"));
-        newPayeeDetailsBox.sendKeys(payeeInfo.get("Payee details"));
-        submitNewPayeeBtn.click();
-
-    }
 
 
 }

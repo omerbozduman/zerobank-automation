@@ -1,4 +1,4 @@
-
+@wip
 Feature: Purchase Foreign Currency
 
   Background:
@@ -8,7 +8,7 @@ Feature: Purchase Foreign Currency
     Then the user navigate to "Pay Bills" tab
     Then the user accesses the Purchase foreign currency cash tab
 
-  @wip
+
   Scenario: Available currencies
     Then following currencies should be available
       |Australia (dollar) |
