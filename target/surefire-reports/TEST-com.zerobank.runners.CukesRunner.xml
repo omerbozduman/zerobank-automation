@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.zerobank.runners.CukesRunner" time="174.031" tests="30" errors="0" skipped="0" failures="6">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.zerobank.runners.CukesRunner" time="161.88" tests="30" errors="0" skipped="0" failures="6">
   <properties>
     <property name="java.specification.version" value="13"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.class.path" value="/Users/omerbozduman/IdeaProjects/zerobank-automation/target/test-classes:/Users/omerbozduman/IdeaProjects/zerobank-automation/target/classes:/Users/omerbozduman/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/omerbozduman/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/omerbozduman/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/omerbozduman/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/omerbozduman/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/omerbozduman/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/omerbozduman/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/omerbozduman/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/omerbozduman/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/omerbozduman/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/omerbozduman/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/omerbozduman/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/omerbozduman/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/omerbozduman/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/omerbozduman/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/omerbozduman/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/omerbozduman/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/omerbozduman/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/omerbozduman/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/omerbozduman/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/omerbozduman/.m2/repository/io/github/bonigarcia/webdrivermanager/4.0.0/webdrivermanager-4.0.0.jar:/Users/omerbozduman/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/omerbozduman/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/omerbozduman/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/Users/omerbozduman/.m2/repository/org/apache/commons/commons-lang3/3.10/commons-lang3-3.10.jar:/Users/omerbozduman/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.0/httpclient5-5.0.jar:/Users/omerbozduman/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.0/httpcore5-5.0.jar:/Users/omerbozduman/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.0/httpcore5-h2-5.0.jar:/Users/omerbozduman/.m2/repository/commons-codec/commons-codec/1.13/commons-codec-1.13.jar:/Users/omerbozduman/.m2/repository/org/rauschig/jarchivelib/1.0.0/jarchivelib-1.0.0.jar:/Users/omerbozduman/.m2/repository/org/apache/commons/commons-compress/1.18/commons-compress-1.18.jar:/Users/omerbozduman/.m2/repository/org/jsoup/jsoup/1.13.1/jsoup-1.13.1.jar:/Users/omerbozduman/.m2/repository/io/cucumber/cucumber-java/5.7.0/cucumber-java-5.7.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/cucumber-core/5.7.0/cucumber-core-5.7.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/cucumber-gherkin/5.7.0/cucumber-gherkin-5.7.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/cucumber-gherkin-vintage/5.7.0/cucumber-gherkin-vintage-5.7.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/tag-expressions/2.0.4/tag-expressions-2.0.4.jar:/Users/omerbozduman/.m2/repository/io/cucumber/cucumber-expressions/8.3.1/cucumber-expressions-8.3.1.jar:/Users/omerbozduman/.m2/repository/io/cucumber/datatable/3.3.1/datatable-3.3.1.jar:/Users/omerbozduman/.m2/repository/io/cucumber/cucumber-plugin/5.7.0/cucumber-plugin-5.7.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/docstring/5.7.0/docstring-5.7.0.jar:/Users/omerbozduman/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/cucumber-junit/5.7.0/cucumber-junit-5.7.0.jar:/Users/omerbozduman/.m2/repository/junit/junit/4.13/junit-4.13.jar:/Users/omerbozduman/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
     <property name="os.name" value="Mac OS X"/>
     <property name="java.vm.specification.version" value="13"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="GB"/>
-    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-13.0.2.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/omerbozduman/IdeaProjects/zerobank-automation/target/surefire/surefirebooter16944501897958458883.jar /Users/omerbozduman/IdeaProjects/zerobank-automation/target/surefire 2020-06-09T12-19-27_063-jvmRun1 surefire17084453326647481501tmp surefire_013876675439810028852tmp"/>
+    <property name="sun.boot.library.path" value="/usr/local/Cellar/openjdk/13.0.2+8_2/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/omerbozduman/IdeaProjects/zerobank-automation/target/surefire/surefirebooter884357251218155059.jar /Users/omerbozduman/IdeaProjects/zerobank-automation/target/surefire 2020-06-10T19-03-45_514-jvmRun1 surefire3184012040445235321tmp surefire_011593246172664777676tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/omerbozduman/IdeaProjects/zerobank-automation/target/test-classes:/Users/omerbozduman/IdeaProjects/zerobank-automation/target/classes:/Users/omerbozduman/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/omerbozduman/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/omerbozduman/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/omerbozduman/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/omerbozduman/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/omerbozduman/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/omerbozduman/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/omerbozduman/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/omerbozduman/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/omerbozduman/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/omerbozduman/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/omerbozduman/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/omerbozduman/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/omerbozduman/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/omerbozduman/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/omerbozduman/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/omerbozduman/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/omerbozduman/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/omerbozduman/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/omerbozduman/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/omerbozduman/.m2/repository/io/github/bonigarcia/webdrivermanager/4.0.0/webdrivermanager-4.0.0.jar:/Users/omerbozduman/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/omerbozduman/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/omerbozduman/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/Users/omerbozduman/.m2/repository/org/apache/commons/commons-lang3/3.10/commons-lang3-3.10.jar:/Users/omerbozduman/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.0/httpclient5-5.0.jar:/Users/omerbozduman/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.0/httpcore5-5.0.jar:/Users/omerbozduman/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.0/httpcore5-h2-5.0.jar:/Users/omerbozduman/.m2/repository/commons-codec/commons-codec/1.13/commons-codec-1.13.jar:/Users/omerbozduman/.m2/repository/org/rauschig/jarchivelib/1.0.0/jarchivelib-1.0.0.jar:/Users/omerbozduman/.m2/repository/org/apache/commons/commons-compress/1.18/commons-compress-1.18.jar:/Users/omerbozduman/.m2/repository/org/jsoup/jsoup/1.13.1/jsoup-1.13.1.jar:/Users/omerbozduman/.m2/repository/io/cucumber/cucumber-java/5.7.0/cucumber-java-5.7.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/cucumber-core/5.7.0/cucumber-core-5.7.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/cucumber-gherkin/5.7.0/cucumber-gherkin-5.7.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/cucumber-gherkin-vintage/5.7.0/cucumber-gherkin-vintage-5.7.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/tag-expressions/2.0.4/tag-expressions-2.0.4.jar:/Users/omerbozduman/.m2/repository/io/cucumber/cucumber-expressions/8.3.1/cucumber-expressions-8.3.1.jar:/Users/omerbozduman/.m2/repository/io/cucumber/datatable/3.3.1/datatable-3.3.1.jar:/Users/omerbozduman/.m2/repository/io/cucumber/cucumber-plugin/5.7.0/cucumber-plugin-5.7.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/docstring/5.7.0/docstring-5.7.0.jar:/Users/omerbozduman/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/cucumber-junit/5.7.0/cucumber-junit-5.7.0.jar:/Users/omerbozduman/.m2/repository/junit/junit/4.13/junit-4.13.jar:/Users/omerbozduman/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
@@ -21,24 +21,23 @@
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="java.version.date" value="2020-01-14"/>
-    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-13.0.2.jdk/Contents/Home"/>
+    <property name="java.home" value="/usr/local/Cellar/openjdk/13.0.2+8_2/libexec/openjdk.jdk/Contents/Home"/>
     <property name="file.separator" value="/"/>
     <property name="basedir" value="/Users/omerbozduman/IdeaProjects/zerobank-automation"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="idea.version2020.1.2" value="true"/>
-    <property name="surefire.real.class.path" value="/Users/omerbozduman/IdeaProjects/zerobank-automation/target/surefire/surefirebooter16944501897958458883.jar"/>
+    <property name="surefire.real.class.path" value="/Users/omerbozduman/IdeaProjects/zerobank-automation/target/surefire/surefirebooter884357251218155059.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="13.0.2+8"/>
     <property name="user.name" value="omerbozduman"/>
     <property name="path.separator" value=":"/>
     <property name="os.version" value="10.15.4"/>
-    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
-    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
     <property name="localRepository" value="/Users/omerbozduman/.m2/repository"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="/var/folders/7z/whvwb5mj4zq6zmtw4qb6hh9m0000gn/T/"/>
@@ -48,100 +47,100 @@
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="java.library.path" value="/Users/omerbozduman/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
-    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor" value="N/A"/>
     <property name="java.vm.version" value="13.0.2+8"/>
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="57.0"/>
   </properties>
-  <testcase name="Verify Account Activity Page" classname="Account Activity" time="5.062"/>
-  <testcase name="Verify Account Activity tab Account dropdown default option" classname="Account Activity" time="3.36"/>
-  <testcase name="Verify Account Activity tab Account dropdown options" classname="Account Activity" time="3.885">
+  <testcase name="Verify Account Activity Page" classname="Account Activity" time="4.798"/>
+  <testcase name="Verify Account Activity tab Account dropdown default option" classname="Account Activity" time="3.312"/>
+  <testcase name="Verify Account Activity tab Account dropdown options" classname="Account Activity" time="3.734">
     <failure message="verify actions options expected:&lt;[Savings, Checking, Loan, Credit Card, Brokerage]&gt; but was:&lt;[Savings, Checking, Savings, Loan, Credit Card, Brokerage]&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: verify actions options expected:<[Savings, Checking, Loan, Credit Card, Brokerage]> but was:<[Savings, Checking, Savings, Loan, Credit Card, Brokerage]>
 ]]></failure>
-    <system-err><![CDATA[Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 37310
+    <system-err><![CDATA[Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 38473
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jun 09, 2020 12:19:36 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jun 10, 2020 7:03:54 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="Verify Account Activity tab Transactions options" classname="Account Activity" time="6.436"/>
-  <testcase name="Savings account redirect" classname="Navigating to specific accounts in Accounts Activity" time="4.273"/>
-  <testcase name="Brokerage account redirect" classname="Navigating to specific accounts in Accounts Activity" time="3.434"/>
-  <testcase name="Checking account redirect" classname="Navigating to specific accounts in Accounts Activity" time="3.338"/>
-  <testcase name="Credit Card account redirect" classname="Navigating to specific accounts in Accounts Activity" time="3.443"/>
-  <testcase name="Loan account redirect" classname="Navigating to specific accounts in Accounts Activity" time="3.323"/>
-  <testcase name="Verify Account Summary Page" classname="Account Summary" time="2.853"/>
-  <testcase name="Verify on Account Summary page Account types" classname="Account Summary" time="2.963"/>
-  <testcase name="Verify on Account summary page Credit Options accounts" classname="Account Summary" time="3.013"/>
-  <testcase name="Add a new payee" classname="Add new payee under pay bills" time="6.159"/>
-  <testcase name="Search date range" classname="Find Transactions in Account Activity" time="14.38"/>
-  <testcase name="Search description" classname="Find Transactions in Account Activity" time="8.228">
+  <testcase name="Verify Account Activity tab Transactions options" classname="Account Activity" time="5.263"/>
+  <testcase name="Savings account redirect" classname="Navigating to specific accounts in Accounts Activity" time="3.183"/>
+  <testcase name="Brokerage account redirect" classname="Navigating to specific accounts in Accounts Activity" time="3.184"/>
+  <testcase name="Checking account redirect" classname="Navigating to specific accounts in Accounts Activity" time="3.143"/>
+  <testcase name="Credit Card account redirect" classname="Navigating to specific accounts in Accounts Activity" time="3.268"/>
+  <testcase name="Loan account redirect" classname="Navigating to specific accounts in Accounts Activity" time="3.228"/>
+  <testcase name="Verify Account Summary Page" classname="Account Summary" time="3.644"/>
+  <testcase name="Verify on Account Summary page Account types" classname="Account Summary" time="2.748"/>
+  <testcase name="Verify on Account summary page Credit Options accounts" classname="Account Summary" time="2.746"/>
+  <testcase name="Add a new payee" classname="Add new payee under pay bills" time="5.986"/>
+  <testcase name="Search date range" classname="Find Transactions in Account Activity" time="12.001"/>
+  <testcase name="Search description" classname="Find Transactions in Account Activity" time="8.103">
     <failure message="verify not show description on table" type="java.lang.AssertionError">java.lang.AssertionError: verify not show description on table
 </failure>
-    <system-err><![CDATA[Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 33604
+    <system-err><![CDATA[Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 40926
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jun 09, 2020 12:20:34 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jun 10, 2020 7:04:47 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="Search description case insensitive" classname="Find Transactions in Account Activity" time="8.267">
+  <testcase name="Search description case insensitive" classname="Find Transactions in Account Activity" time="8.037">
     <failure message="verify table show only description" type="java.lang.AssertionError">java.lang.AssertionError: verify table show only description
 </failure>
-    <system-err><![CDATA[Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 2070
+    <system-err><![CDATA[Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 30333
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jun 09, 2020 12:20:42 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jun 10, 2020 7:04:55 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="Type" classname="Find Transactions in Account Activity" time="12.897"/>
-  <testcase name="Login with valid credentials" classname="Users should be able to login" time="2.837"/>
-  <testcase name="Login with invalid username credential" classname="Users should be able to login" time="6.692"/>
-  <testcase name="Login with invalid username credential" classname="Users should be able to login" time="4.292"/>
-  <testcase name="Verify Account Activity Page" classname="Pay Bills" time="3.264"/>
-  <testcase name="Verify Payment Operation with valid values" classname="Pay Bills" time="5.757"/>
-  <testcase name="Verify Payment Operation with amount field empty" classname="Pay Bills" time="6.782"/>
-  <testcase name="Verify Payment Operation with enter amount as alphabetical characters" classname="Pay Bills" time="4.521">
+  <testcase name="Type" classname="Find Transactions in Account Activity" time="12.72"/>
+  <testcase name="Login with valid credentials" classname="Users should be able to login" time="2.738"/>
+  <testcase name="Login with invalid username credential" classname="Users should be able to login" time="4.074"/>
+  <testcase name="Login with invalid username credential" classname="Users should be able to login" time="4.238"/>
+  <testcase name="Verify Account Activity Page" classname="Pay Bills" time="3.217"/>
+  <testcase name="Verify Payment Operation with valid values" classname="Pay Bills" time="3.948"/>
+  <testcase name="Verify Payment Operation with amount field empty" classname="Pay Bills" time="5.708"/>
+  <testcase name="Verify Payment Operation with enter amount as alphabetical characters" classname="Pay Bills" time="4.265">
     <failure message="verify payment submit message expected:&lt;The payment was [not ]successfully submitt...&gt; but was:&lt;The payment was []successfully submitt...&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: verify payment submit message expected:<The payment was [not ]successfully submitt...> but was:<The payment was []successfully submitt...>
 ]]></failure>
-    <system-err><![CDATA[Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 29862
+    <system-err><![CDATA[Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 47534
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jun 09, 2020 12:21:33 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jun 10, 2020 7:05:39 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="Verify Payment Operation with enter amount as special characters" classname="Pay Bills" time="4.402">
+  <testcase name="Verify Payment Operation with enter amount as special characters" classname="Pay Bills" time="4.278">
     <failure message="verify payment submit message expected:&lt;The payment was [not ]successfully submitt...&gt; but was:&lt;The payment was []successfully submitt...&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: verify payment submit message expected:<The payment was [not ]successfully submitt...> but was:<The payment was []successfully submitt...>
 ]]></failure>
-    <system-err><![CDATA[Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 35265
+    <system-err><![CDATA[Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 6938
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jun 09, 2020 12:21:37 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jun 10, 2020 7:05:44 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="Verify Payment Operation without date" classname="Pay Bills" time="5.945"/>
-  <testcase name="Verify Payment Operation with enter date as alphabetical characters" classname="Pay Bills" time="4.435">
+  <testcase name="Verify Payment Operation without date" classname="Pay Bills" time="5.635"/>
+  <testcase name="Verify Payment Operation with enter date as alphabetical characters" classname="Pay Bills" time="4.268">
     <failure message="verify payment submit message expected:&lt;The payment was [not ]successfully submitt...&gt; but was:&lt;The payment was []successfully submitt...&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: verify payment submit message expected:<The payment was [not ]successfully submitt...> but was:<The payment was []successfully submitt...>
 ]]></failure>
-    <system-err><![CDATA[Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 34984
+    <system-err><![CDATA[Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 40251
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jun 09, 2020 12:21:48 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jun 10, 2020 7:05:54 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="Available currencies" classname="Purchase Foreign Currency" time="7.77"/>
-  <testcase name="Error message for not selecting currency" classname="Purchase Foreign Currency" time="10.839"/>
-  <testcase name="Error message for not entering value" classname="Purchase Foreign Currency" time="10.509"/>
+  <testcase name="Available currencies" classname="Purchase Foreign Currency" time="7.693"/>
+  <testcase name="Error message for not selecting currency" classname="Purchase Foreign Currency" time="11.571"/>
+  <testcase name="Error message for not entering value" classname="Purchase Foreign Currency" time="10.384"/>
 </testsuite>

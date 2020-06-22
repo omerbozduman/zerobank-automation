@@ -1,22 +1,22 @@
 -------------------------------------------------------------------------------
 Test set: com.zerobank.runners.CukesRunner
 -------------------------------------------------------------------------------
-Tests run: 30, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 174.031 s <<< FAILURE! - in com.zerobank.runners.CukesRunner
-Verify Account Activity tab Account dropdown options(Account Activity)  Time elapsed: 3.885 s  <<< FAILURE!
+Tests run: 30, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 161.88 s <<< FAILURE! - in com.zerobank.runners.CukesRunner
+Verify Account Activity tab Account dropdown options(Account Activity)  Time elapsed: 3.734 s  <<< FAILURE!
 java.lang.AssertionError: verify actions options expected:<[Savings, Checking, Loan, Credit Card, Brokerage]> but was:<[Savings, Checking, Savings, Loan, Credit Card, Brokerage]>
 
-Search description(Find Transactions in Account Activity)  Time elapsed: 8.228 s  <<< FAILURE!
+Search description(Find Transactions in Account Activity)  Time elapsed: 8.103 s  <<< FAILURE!
 java.lang.AssertionError: verify not show description on table
 
-Search description case insensitive(Find Transactions in Account Activity)  Time elapsed: 8.267 s  <<< FAILURE!
+Search description case insensitive(Find Transactions in Account Activity)  Time elapsed: 8.037 s  <<< FAILURE!
 java.lang.AssertionError: verify table show only description
 
-Verify Payment Operation with enter amount as alphabetical characters(Pay Bills)  Time elapsed: 4.521 s  <<< FAILURE!
+Verify Payment Operation with enter amount as alphabetical characters(Pay Bills)  Time elapsed: 4.265 s  <<< FAILURE!
 org.junit.ComparisonFailure: verify payment submit message expected:<The payment was [not ]successfully submitt...> but was:<The payment was []successfully submitt...>
 
-Verify Payment Operation with enter amount as special characters(Pay Bills)  Time elapsed: 4.402 s  <<< FAILURE!
+Verify Payment Operation with enter amount as special characters(Pay Bills)  Time elapsed: 4.278 s  <<< FAILURE!
 org.junit.ComparisonFailure: verify payment submit message expected:<The payment was [not ]successfully submitt...> but was:<The payment was []successfully submitt...>
 
-Verify Payment Operation with enter date as alphabetical characters(Pay Bills)  Time elapsed: 4.435 s  <<< FAILURE!
+Verify Payment Operation with enter date as alphabetical characters(Pay Bills)  Time elapsed: 4.268 s  <<< FAILURE!
 org.junit.ComparisonFailure: verify payment submit message expected:<The payment was [not ]successfully submitt...> but was:<The payment was []successfully submitt...>
 

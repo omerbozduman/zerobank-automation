@@ -1,4 +1,4 @@
-@wip
+
 Feature: Purchase Foreign Currency
 
   Background:

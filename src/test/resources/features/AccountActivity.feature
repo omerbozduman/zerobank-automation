@@ -1,4 +1,4 @@
-@wip
+
 Feature:Account Activity
 
 Background:
@@ -7,7 +7,7 @@ Background:
   Then the user logs in using "username" and "password"
   Then the user navigate to "Account Activity" tab
 
-
+  @wip
   Scenario:  Verify Account Activity Page
     And the title should be "Zero - Account Activity"
 

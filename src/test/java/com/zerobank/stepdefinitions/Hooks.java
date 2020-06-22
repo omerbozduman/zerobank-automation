@@ -9,8 +9,10 @@ import org.openqa.selenium.TakesScreenshot;
 
 public class Hooks {
 
+
     @Before
     public void setUp(){
+        System.out.println("\"before method\" = " + "before method");
 
     }
 

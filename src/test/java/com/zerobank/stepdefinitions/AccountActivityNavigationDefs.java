@@ -17,6 +17,8 @@ public class AccountActivityNavigationDefs {
     public void the_user_clicks_on_link_on_the_Account_Summary_page(String activity) {
         accountSummaryPage.clickActivityLink(activity);
 
+
+
     }
 
     @Then("Account drop down should have {string} selected")
