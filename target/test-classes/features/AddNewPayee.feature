@@ -8,7 +8,7 @@ Feature: Add new payee under pay bills
     Then the user logs in using "username" and "password"
     Then the user navigate to "Pay Bills" tab
 
-
+  @data
   Scenario: Add a new payee
     Given Add New Payee tab
     And creates new payee using following information

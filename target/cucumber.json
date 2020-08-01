@@ -3,84 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 2277730000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "the user is on the Home Page",
-            "match": {
-              "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_is_on_the_Home_Page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 203620000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "the user navigate to Login Page",
-            "match": {
-              "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_navigate_to_Login_Page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1036419000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "the user logs in using \"username\" and \"password\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"username\"",
-                  "offset": 23
-                },
-                {
-                  "val": "\"password\"",
-                  "offset": 38
-                }
-              ],
-              "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_logs_in_using_and(java.lang.String,java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 492869000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "the user navigate to \"Account Activity\" tab",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Account Activity\"",
-                  "offset": 21
-                }
-              ],
-              "location": "com.zerobank.stepdefinitions.AccountActivityDefs.the_user_navigate_to_tab(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-06-11T14:07:28.941Z",
+        "start_timestamp": "2020-08-01T00:08:48.196Z",
         "before": [
           {
             "result": {
-              "duration": 2357000,
+              "duration": 2287320000,
               "status": "passed"
             },
             "match": {
@@ -88,14 +15,14 @@
             }
           }
         ],
-        "line": 11,
-        "name": "Verify Account Activity Page",
+        "line": 4,
+        "name": "Search Cars in London from Google",
         "description": "",
-        "id": "account-activity;verify-account-activity-page",
+        "id": "search-car-in-london;search-cars-in-london-from-google",
         "after": [
           {
             "result": {
-              "duration": 70894000,
+              "duration": 1544000,
               "status": "passed"
             },
             "match": {
@@ -108,35 +35,128 @@
         "steps": [
           {
             "result": {
-              "duration": 9684000,
+              "duration": 2116082000,
               "status": "passed"
             },
-            "line": 12,
-            "name": "the title should be \"Zero - Account Activity\"",
+            "line": 5,
+            "name": "the user is on the Google",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.GoogleStepDefs.the_user_is_on_the_Google()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3002511000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user search \"Cars in London\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Zero - Account Activity\"",
-                  "offset": 20
+                  "val": "\"Cars in London\"",
+                  "offset": 16
                 }
               ],
-              "location": "com.zerobank.stepdefinitions.AccountSummaryDefs.the_title_should_be(java.lang.String)"
+              "location": "com.zerobank.stepdefinitions.GoogleStepDefs.the_user_search(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 97380000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "displayed the result",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.GoogleStepDefs.displayed_the_result()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 23960000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "verify the available \"gumtree\" Links number",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"gumtree\"",
+                  "offset": 21
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.GoogleStepDefs.verifyTheAvailableLinksNumber(java.lang.String)"
             },
             "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6834897000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "navigate to each Gumtree Link",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.GoogleStepDefs.navigate_to_each_Gumtree_Link()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1254000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "verify the title is displayed",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.GoogleStepDefs.verify_the_title_is_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1323000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "verify the number of cars grater the 0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 37
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.GoogleStepDefs.verifyTheNumberOfCarsGraterThe(int)"
+            },
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@wip"
+            "name": "@Google"
           }
         ]
       }
     ],
-    "name": "Account Activity",
+    "name": "Search Car in London",
     "description": "",
-    "id": "account-activity",
+    "id": "search-car-in-london",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/AccountActivity.feature",
-    "tags": []
+    "uri": "file:src/test/resources/features/Google.feature",
+    "tags": [
+      {
+        "name": "@Google",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]

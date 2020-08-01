@@ -1,5 +1,5 @@
-
 Feature: Account Summary
+
   Background:
     Given the user is on the Home Page
     When the user navigate to Login Page
@@ -16,7 +16,7 @@ Feature: Account Summary
       | Credit Accounts     |
       | Loan Accounts       |
 
-    Scenario: Verify on Account summary page Credit Options accounts
+  Scenario: Verify on Account summary page Credit Options accounts
     And user should see following options under Credit Accounts
       | Account     |
       | Credit Card |
